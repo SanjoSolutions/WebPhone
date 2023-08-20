@@ -50,7 +50,9 @@ function getStreamCode() {
 
 function getLocalStream() {
   const constraints = {
-    video: true,
+    video: {
+      facingMode: { ideal: 'user' },
+    },
     audio: true,
   }
 
